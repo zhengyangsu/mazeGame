@@ -1,0 +1,12 @@
+ODD
+
+1) 	The game requires two different types movable pieces: cat and mice. Considering cheese is a special type which does not have the ability to move. 
+	So we decided to create an abstract class named Animal. Cat, Mice and Cheese are inheritance of class Animal. Perhaps, I should consider rename class Animal,
+	since cheese is technically not animal. Since both Cat and Mouse class share a lof of the features, they will be benifited from have the same super class.
+
+2) 	The Maze displays multiple different objects: wall, path, cat, mouse, and cheese. 
+	Wthin this maze, if we make each individual cell an object with a type property, this will make our job easier to identify the location and type of each differenct object.
+	The operation of moving one piece to another location becomes very easy; we can simply switch the type property to the desired one.
+
+3)	Now, lets consider both Cat and Mouse to be players: one is controled by player and one with the preset routine. All these two classes need to do is to produce the 
+	next location of itslef on the maze board. Another benifits of have these two classes is that we can have as many cats or mouse as we desire and it even make multiplayer possible.

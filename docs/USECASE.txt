@@ -1,0 +1,31 @@
+PLAY GAME use case:
+
+1) Player will see the main menu and enter "play" to play game.
+	1.1) If enter different words or numbers, it will prints errors.
+	1.2) The wall must not be generated on each 4 corners to block the mouse and cats to move.
+	1.3) Remove some inner walls(wall remover), so there will be a different path that lead to the cheese or a different escape route for the mouse when it is trying to avoid the cat
+	1.4) When the player enters '?', it will reveal the help to show the objectives and keys to enter.
+	1.5) When the player enters 'm', it will reveal the whole map.
+
+2) The maze will be randomly generated(walls will be different each time and all the way around the edge) and 20 cells wide, and 15 cells tall(18x13 after inside).
+	2.1) The cheese will be randomly generated in a different location, and after being eaten by the mouse(cannot be generated in the wall).
+	2.2) The cheese can be seen buy the player.
+	2.3) When the player acquired a cheese, it will display how many cheese it has acquired.
+	2.4) When the player acquire all cheese, display the whole map.
+
+3) Player will have 4 moves, w - UP, s - down, a - left, and d - down.
+	3.1) If play enters invalid input or no input at all, it display errors and tells user to enter WSAD.
+	3.2) If the perosn is in from of a wall or at the end of path and still wants to move forward, display error message that he/she cant move forward anymore.
+	3.3) When the player and cat have the same coordinates(player moves into cat), display a message telling the player has lost the game.
+	3.4) The player will be able to see the eight squares around him in order to see the path and paths they have travelled.
+	
+4) The mouse has to aquire 5 cheeses(location is randomly generated) to win the game.
+	4.1) The location of the mouse will start at the top left corner.
+
+5) The cat will be generated in the rest of each left over corners(three cats); top right, bottom left and bottom right.
+	5.1) All three cats will move blindly along the maze(randomly walk around the path of maze) and try not to backtrack their steps.
+	5.2) When the cat is on the same coordinate of the cheese, it will be on top of the cheese and only display the cat.
+	5.3) The player will loose even when it has acquired the last cheese, which is on the same coordinates as the cat.
+	5.4) It will cannont go over the wall.
+	5.5) It doesn't not show the path it has travelled.
+
