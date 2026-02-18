@@ -112,7 +112,7 @@ public class Maze {
                 backTrack();
             }
         }
-        wallRemoval(0);
+        wallRemoval(0.3);
         for (int i = 0; i < ROW; i++) {
             for (int j = 0; j < COLUMN; j++) {
                 maze[i][j].setVisit(false);
